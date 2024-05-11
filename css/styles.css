@@ -687,6 +687,8 @@ button {
 
 .modal-close-btn {
     position: absolute;
+    width: 24px;
+    height: 24px;
     top: 24px;
     right: 24px;
     padding: 0;
@@ -710,6 +712,12 @@ button {
 
 .modal-close-icon {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .form-description {
@@ -761,7 +769,7 @@ button {
 .form-input-icon {
     position: absolute;
     top: 50%;
-    left: 15px;
+    left: 16px;
     transform: translateY(-50%);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -831,7 +839,7 @@ button {
     fill: transparent;
 }
 
-.new-checkbox:checked {
+.new-checkbox:checked + .form-checkbox {
     background-color: #404bbf;
     border: none;
     fill: #F4F4FD;
@@ -840,11 +848,6 @@ button {
 .privacy-policy-link {
     text-decoration: underline;
     color: #4D5AE5;
-}
-
-.submit-wrapper {
-    display: flex;
-    justify-content: center;
 }
 
 .form-submit {
