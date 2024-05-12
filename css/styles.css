@@ -839,7 +839,7 @@ button {
     fill: transparent;
 }
 
-.new-checkbox:checked + .form-checkbox {
+.form-checkbox:checked + .form-checkbox-label > .new-checkbox {
     background-color: #404bbf;
     border: none;
     fill: #F4F4FD;
